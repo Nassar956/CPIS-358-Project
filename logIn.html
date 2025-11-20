@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allergic Food Scanner</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="homePage.html">Home</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset class="container" style="max-width: 500px; margin: 50px auto;">
+            <h2>Access Your Profile</h2>
+            <div id="loginStatus"></div>
+            
+            <form name="loginForm" action="index.html" onsubmit="return validateLogin()" method="post">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email..">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password..">
+
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Group 2 - CPIS-358 Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
