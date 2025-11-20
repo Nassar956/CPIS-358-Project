@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Allergic Food Scanner</title>
+  <link rel="stylesheet" href="CSS.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Allergic Food Scanner</h1>
+    <nav>
+      <a href="homePage.html">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="login.html">Log In</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <p id="greetingArea" style="font-weight:bold; color:#00838f; padding:10px;"></p>
+
+    <fieldset class="container">
+      <div style="text-align:center;">
+        <img src="Image.jpg" alt="Project Logo" width="150" height="150" usemap="#workmap"
+          style="border: 2px solid #333;">
+        <map name="workmap">
+          <area shape="rect" coords="0,0,300,150" alt="About Us" href="aboutUs.html">
+        </map>
+        <p><small>Click the image above to read about our team.</small></p>
+      </div>
+    </fieldset>
+
+    <fieldset class="container">
+      <h2>Problem Statement</h2>
+      <p>
+        Food allergies are a life-threatening problem. Hidden allergens and confusing labels make grocery shopping
+        dangerous.
+        Current apps often fail to detect hidden derivatives.
+      </p>
+
+      <h2>Our Solution</h2>
+      <p>
+        <strong>Allergic Food Scanner</strong> provides an accurate detection system for both visible and hidden
+        allergens,
+        giving you peace of mind.
+      </p>
+
+
+    </fieldset>
+
+    <fieldset id="features" class="container">
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Hidden Allergen Detection:</strong> Finds derivatives other apps miss.</li>
+        <li><strong>Risk Reporting:</strong> <span style="color:green">Green (Safe)</span> vs <span
+            style="color:red">Red (Risky)</span>.</li>
+        <li><strong>Profile Management:</strong> Customize your specific allergies.</li>
+      </ul>
+    </fieldset>
+  </main>
+
+  <footer>
+    <p style="margin: 5px 0;">&copy; 2025 Group 2 - CPIS-358 Project</p>
+  </footer>
+
+  <script>
+
+    function displayWelcome() {
+      let today = new Date();
+      let hour = today.getHours();
+      let greeting;
+
+      if (hour < 12) {
+        greeting = "Good Morning!";
+      } else if (hour < 18) {
+        greeting = "Good Afternoon!";
+      } else {
+        greeting = "Good Evening!";
+      }
+
+      document.getElementById("greetingArea").innerText = greeting + " Welcome to Allergic Food Scanner.";
+    }
+
+
+    window.onload = displayWelcome;
+  </script>
+</body>
+
+</html>
